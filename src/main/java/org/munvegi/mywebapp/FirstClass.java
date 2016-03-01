@@ -5,6 +5,7 @@ package org.munvegi.mywebapp;
  */
 public class FirstClass {
     private String first;
+    private String second;
 
 
 }
