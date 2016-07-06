@@ -57,6 +57,14 @@
       <version>${jcl-over-slf4j.version}</version>
     </dependency>
 
+    <!-- Mockito -->
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+    </dependency>
+
     <!--<dependency>-->
       <!--<groupId>ch.qos.logback</groupId>-->
       <!--<artifactId>logback-classic</artifactId>-->
@@ -67,5 +75,15 @@
 
   <build>
     <finalName>mywebapp</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
